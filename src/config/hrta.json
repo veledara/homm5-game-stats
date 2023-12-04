@@ -18,106 +18,106 @@
       {
         "Name": "Лига Теней",
         "Heroes": [
-          { "Name": "Эрин", "ImagePath": "src/resources/races/academy/heroes/Eruina.png" },
-          { "Name": "Кифра", "ImagePath": "src/resources/races/academy/heroes/Kythra.png" },
-          { "Name": "Летос", "ImagePath": "src/resources/races/academy/heroes/Lethos.png" },
-          { "Name": "Шадия", "ImagePath": "src/resources/races/academy/heroes/Shadya.png" },
-          { "Name": "Синитар", "ImagePath": "src/resources/races/academy/heroes/Sinitar.png" },
-          { "Name": "Соргалл", "ImagePath": "src/resources/races/academy/heroes/Sorgal.png" },
-          { "Name": "Вайшан", "ImagePath": "src/resources/races/academy/heroes/Vayshan.png" },
-          { "Name": "Илайа", "ImagePath": "src/resources/races/academy/heroes/Ylaya.png" },
-          { "Name": "Ирбет", "ImagePath": "src/resources/races/academy/heroes/Yrbeth.png" },
-          { "Name": "Иранна", "ImagePath": "src/resources/races/academy/heroes/Yrwanna.png" }
+          { "Name": "Эрин", "ImagePath": "src/resources/races/dungeon/heroes/Eruina.png" },
+          { "Name": "Кифра", "ImagePath": "src/resources/races/dungeon/heroes/Kythra.png" },
+          { "Name": "Летос", "ImagePath": "src/resources/races/dungeon/heroes/Lethos.png" },
+          { "Name": "Шадия", "ImagePath": "src/resources/races/dungeon/heroes/Shadya.png" },
+          { "Name": "Синитар", "ImagePath": "src/resources/races/dungeon/heroes/Sinitar.png" },
+          { "Name": "Соргалл", "ImagePath": "src/resources/races/dungeon/heroes/Sorgal.png" },
+          { "Name": "Вайшан", "ImagePath": "src/resources/races/dungeon/heroes/Vayshan.png" },
+          { "Name": "Илайа", "ImagePath": "src/resources/races/dungeon/heroes/Ylaya.png" },
+          { "Name": "Ирбет", "ImagePath": "src/resources/races/dungeon/heroes/Yrbeth.png" },
+          { "Name": "Иранна", "ImagePath": "src/resources/races/dungeon/heroes/Yrwanna.png" }
         ]
       },
       {
         "Name": "Северные Кланы",
         "Heroes": [
-          { "Name": "Бранд", "ImagePath": "src/resources/races/academy/heroes/Brand.png" },
-          { "Name": "Ибба", "ImagePath": "src/resources/races/academy/heroes/Ebba.png" },
-          { "Name": "Эрлинг", "ImagePath": "src/resources/races/academy/heroes/Erling.png" },
-          { "Name": "Хельмар", "ImagePath": "src/resources/races/academy/heroes/Helmar.png" },
-          { "Name": "Инга", "ImagePath": "src/resources/races/academy/heroes/Inga.png" },
-          { "Name": "Ингвар", "ImagePath": "src/resources/races/academy/heroes/Ingvar.png" },
-          { "Name": "Карли", "ImagePath": "src/resources/races/academy/heroes/Karli.png" },
-          { "Name": "Рольф", "ImagePath": "src/resources/races/academy/heroes/Rolf.png" },
-          { "Name": "Свея", "ImagePath": "src/resources/races/academy/heroes/Svea.png" },
-          { "Name": "Вульфстен", "ImagePath": "src/resources/races/academy/heroes/Wulfstan.png" }
+          { "Name": "Бранд", "ImagePath": "src/resources/races/fortress/heroes/Brand.png" },
+          { "Name": "Ибба", "ImagePath": "src/resources/races/fortress/heroes/Ebba.png" },
+          { "Name": "Эрлинг", "ImagePath": "src/resources/races/fortress/heroes/Erling.png" },
+          { "Name": "Хельмар", "ImagePath": "src/resources/races/fortress/heroes/Helmar.png" },
+          { "Name": "Инга", "ImagePath": "src/resources/races/fortress/heroes/Inga.png" },
+          { "Name": "Ингвар", "ImagePath": "src/resources/races/fortress/heroes/Ingvar.png" },
+          { "Name": "Карли", "ImagePath": "src/resources/races/fortress/heroes/Karli.png" },
+          { "Name": "Рольф", "ImagePath": "src/resources/races/fortress/heroes/Rolf.png" },
+          { "Name": "Свея", "ImagePath": "src/resources/races/fortress/heroes/Svea.png" },
+          { "Name": "Вульфстен", "ImagePath": "src/resources/races/fortress/heroes/Wulfstan.png" }
         ]
       },
       {
         "Name": "Орден Порядка",
         "Heroes": [
-          { "Name": "Дугал", "ImagePath": "src/resources/races/academy/heroes/Dougal.png" },
-          { "Name": "Эллайна", "ImagePath": "src/resources/races/academy/heroes/Ellaine.png" },
-          { "Name": "Годрик", "ImagePath": "src/resources/races/academy/heroes/Godric.png" },
-          { "Name": "Айрис", "ImagePath": "src/resources/races/academy/heroes/Irina.png" },
-          { "Name": "Аксель", "ImagePath": "src/resources/races/academy/heroes/Klaus.png" },
-          { "Name": "Ласло", "ImagePath": "src/resources/races/academy/heroes/Laszlo.png" },
-          { "Name": "Мив", "ImagePath": "src/resources/races/academy/heroes/Maeve.png" },
-          { "Name": "Рутгер", "ImagePath": "src/resources/races/academy/heroes/Rutger.png" },
-          { "Name": "Валерия", "ImagePath": "src/resources/races/academy/heroes/Valeria.png" },
-          { "Name": "Витторио", "ImagePath": "src/resources/races/academy/heroes/Vittorio.png" }
+          { "Name": "Дугал", "ImagePath": "src/resources/races/haven/heroes/Dougal.png" },
+          { "Name": "Эллайна", "ImagePath": "src/resources/races/haven/heroes/Ellaine.png" },
+          { "Name": "Годрик", "ImagePath": "src/resources/races/haven/heroes/Godric.png" },
+          { "Name": "Айрис", "ImagePath": "src/resources/races/haven/heroes/Irina.png" },
+          { "Name": "Аксель", "ImagePath": "src/resources/races/haven/heroes/Klaus.png" },
+          { "Name": "Ласло", "ImagePath": "src/resources/races/haven/heroes/Laszlo.png" },
+          { "Name": "Мив", "ImagePath": "src/resources/races/haven/heroes/Maeve.png" },
+          { "Name": "Рутгер", "ImagePath": "src/resources/races/haven/heroes/Rutger.png" },
+          { "Name": "Валерия", "ImagePath": "src/resources/races/haven/heroes/Valeria.png" },
+          { "Name": "Витторио", "ImagePath": "src/resources/races/haven/heroes/Vittorio.png" }
         ]
       },
       {
         "Name": "Инферно",
         "Heroes": [
-          { "Name": "Аграил", "ImagePath": "src/resources/races/academy/heroes/Agrael.png" },
-          { "Name": "Аластор", "ImagePath": "src/resources/races/academy/heroes/Alastor.png" },
-          { "Name": "Дэлеб", "ImagePath": "src/resources/races/academy/heroes/Deleb.png" },
-          { "Name": "Грол", "ImagePath": "src/resources/races/academy/heroes/Grawl.png" },
-          { "Name": "Грок", "ImagePath": "src/resources/races/academy/heroes/Grok.png" },
-          { "Name": "Джезебет", "ImagePath": "src/resources/races/academy/heroes/Jezebeth.png" },
-          { "Name": "Марбас", "ImagePath": "src/resources/races/academy/heroes/Marbas.png" },
-          { "Name": "Небирос", "ImagePath": "src/resources/races/academy/heroes/Nebiros.png" },
-          { "Name": "Нимус", "ImagePath": "src/resources/races/academy/heroes/Nymus.png" },
-          { "Name": "Орландо", "ImagePath": "src/resources/races/academy/heroes/Orlando.png" }
+          { "Name": "Аграил", "ImagePath": "src/resources/races/inferno/heroes/Agrael.png" },
+          { "Name": "Аластор", "ImagePath": "src/resources/races/inferno/heroes/Alastor.png" },
+          { "Name": "Дэлеб", "ImagePath": "src/resources/races/inferno/heroes/Deleb.png" },
+          { "Name": "Грол", "ImagePath": "src/resources/races/inferno/heroes/Grawl.png" },
+          { "Name": "Грок", "ImagePath": "src/resources/races/inferno/heroes/Grok.png" },
+          { "Name": "Джезебет", "ImagePath": "src/resources/races/inferno/heroes/Jezebeth.png" },
+          { "Name": "Марбас", "ImagePath": "src/resources/races/inferno/heroes/Marbas.png" },
+          { "Name": "Небирос", "ImagePath": "src/resources/races/inferno/heroes/Nebiros.png" },
+          { "Name": "Нимус", "ImagePath": "src/resources/races/inferno/heroes/Nymus.png" },
+          { "Name": "Орландо", "ImagePath": "src/resources/races/inferno/heroes/Orlando.png" }
         ]
       },
       {
         "Name": "Некрополис",
         "Heroes": [
-          { "Name": "Арантир", "ImagePath": "src/resources/races/academy/heroes/Arantir.png" },
-          { "Name": "Дейдра", "ImagePath": "src/resources/races/academy/heroes/Deirdre.png" },
-          { "Name": "Каспар", "ImagePath": "src/resources/races/academy/heroes/Kaspar.png" },
-          { "Name": "Лукреция", "ImagePath": "src/resources/races/academy/heroes/Lucretia.png" },
-          { "Name": "Маркел", "ImagePath": "src/resources/races/academy/heroes/Markal.png" },
-          { "Name": "Наадир", "ImagePath": "src/resources/races/academy/heroes/Naadir.png" },
-          { "Name": "Орнелла", "ImagePath": "src/resources/races/academy/heroes/Ornelia.png" },
-          { "Name": "Орсон", "ImagePath": "src/resources/races/academy/heroes/Orson.png" },
-          { "Name": "Равэнна", "ImagePath": "src/resources/races/academy/heroes/Raven.png" },
-          { "Name": "Влад", "ImagePath": "src/resources/races/academy/heroes/Vladimir.png" }
+          { "Name": "Арантир", "ImagePath": "src/resources/races/necropolis/heroes/Arantir.png" },
+          { "Name": "Дейдра", "ImagePath": "src/resources/races/necropolis/heroes/Deirdre.png" },
+          { "Name": "Каспар", "ImagePath": "src/resources/races/necropolis/heroes/Kaspar.png" },
+          { "Name": "Лукреция", "ImagePath": "src/resources/races/necropolis/heroes/Lucretia.png" },
+          { "Name": "Маркел", "ImagePath": "src/resources/races/necropolis/heroes/Markal.png" },
+          { "Name": "Наадир", "ImagePath": "src/resources/races/necropolis/heroes/Naadir.png" },
+          { "Name": "Орнелла", "ImagePath": "src/resources/races/necropolis/heroes/Ornelia.png" },
+          { "Name": "Орсон", "ImagePath": "src/resources/races/necropolis/heroes/Orson.png" },
+          { "Name": "Равэнна", "ImagePath": "src/resources/races/necropolis/heroes/Raven.png" },
+          { "Name": "Влад", "ImagePath": "src/resources/races/necropolis/heroes/Vladimir.png" }
         ]
       },
       {
         "Name": "Великая Орда",
         "Heroes": [
-          { "Name": "Гаруна", "ImagePath": "src/resources/races/academy/heroes/Garuna.png" },
-          { "Name": "Гошак", "ImagePath": "src/resources/races/academy/heroes/Gorshak.png" },
-          { "Name": "Готай", "ImagePath": "src/resources/races/academy/heroes/Gotai.png" },
-          { "Name": "Хаггеш", "ImagePath": "src/resources/races/academy/heroes/Haggash.png" },
-          { "Name": "Киган", "ImagePath": "src/resources/races/academy/heroes/Kilghan.png" },
-          { "Name": "Краг", "ImagePath": "src/resources/races/academy/heroes/Kragh.png" },
-          { "Name": "Куджин", "ImagePath": "src/resources/races/academy/heroes/Kujin.png" },
-          { "Name": "Курок", "ImagePath": "src/resources/races/academy/heroes/Quroq.png" },
-          { "Name": "Шак'Карукат", "ImagePath": "src/resources/races/academy/heroes/ShakKarukat.png" },
-          { "Name": "Тилсек", "ImagePath": "src/resources/races/academy/heroes/Telsek.png" }
+          { "Name": "Гаруна", "ImagePath": "src/resources/races/stronghold/heroes/Garuna.png" },
+          { "Name": "Гошак", "ImagePath": "src/resources/races/stronghold/heroes/Gorshak.png" },
+          { "Name": "Готай", "ImagePath": "src/resources/races/stronghold/heroes/Gotai.png" },
+          { "Name": "Хаггеш", "ImagePath": "src/resources/races/stronghold/heroes/Haggash.png" },
+          { "Name": "Киган", "ImagePath": "src/resources/races/stronghold/heroes/Kilghan.png" },
+          { "Name": "Краг", "ImagePath": "src/resources/races/stronghold/heroes/Kragh.png" },
+          { "Name": "Куджин", "ImagePath": "src/resources/races/stronghold/heroes/Kujin.png" },
+          { "Name": "Курок", "ImagePath": "src/resources/races/stronghold/heroes/Quroq.png" },
+          { "Name": "Шак'Карукат", "ImagePath": "src/resources/races/stronghold/heroes/ShakKarukat.png" },
+          { "Name": "Тилсек", "ImagePath": "src/resources/races/stronghold/heroes/Telsek.png" }
         ]
       },
       {
         "Name": "Лесной Союз",
         "Heroes": [
-          { "Name": "Аларон", "ImagePath": "src/resources/races/academy/heroes/Alaron.png" },
-          { "Name": "Анвэн", "ImagePath": "src/resources/races/academy/heroes/Anwen.png" },
-          { "Name": "Дираэль", "ImagePath": "src/resources/races/academy/heroes/Dirael.png" },
-          { "Name": "Файдаэн", "ImagePath": "src/resources/races/academy/heroes/Findan.png" },
-          { "Name": "Гильраэн", "ImagePath": "src/resources/races/academy/heroes/Gilraen.png" },
-          { "Name": "Оссир", "ImagePath": "src/resources/races/academy/heroes/Ossir.png" },
-          { "Name": "Таланар", "ImagePath": "src/resources/races/academy/heroes/Talanar.png" },
-          { "Name": "Винраэль", "ImagePath": "src/resources/races/academy/heroes/Vinrael.png" },
-          { "Name": "Вингаэль", "ImagePath": "src/resources/races/academy/heroes/Wyngaal.png" },
-          { "Name": "Ильфина", "ImagePath": "src/resources/races/academy/heroes/Ylthin.png" }
+          { "Name": "Аларон", "ImagePath": "src/resources/races/sylvan/heroes/Alaron.png" },
+          { "Name": "Анвэн", "ImagePath": "src/resources/races/sylvan/heroes/Anwen.png" },
+          { "Name": "Дираэль", "ImagePath": "src/resources/races/sylvan/heroes/Dirael.png" },
+          { "Name": "Файдаэн", "ImagePath": "src/resources/races/sylvan/heroes/Findan.png" },
+          { "Name": "Гильраэн", "ImagePath": "src/resources/races/sylvan/heroes/Gilraen.png" },
+          { "Name": "Оссир", "ImagePath": "src/resources/races/sylvan/heroes/Ossir.png" },
+          { "Name": "Таланар", "ImagePath": "src/resources/races/sylvan/heroes/Talanar.png" },
+          { "Name": "Винраэль", "ImagePath": "src/resources/races/sylvan/heroes/Vinrael.png" },
+          { "Name": "Вингаэль", "ImagePath": "src/resources/races/sylvan/heroes/Wyngaal.png" },
+          { "Name": "Ильфина", "ImagePath": "src/resources/races/sylvan/heroes/Ylthin.png" }
         ]
       }
     ]
