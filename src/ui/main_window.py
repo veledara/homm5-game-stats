@@ -14,32 +14,30 @@ from PySide6.QtCore import Qt
 import datetime
 
 from core.game_data import GameData
-from ui_main_window import Ui_MainWindow
+from ui.ui_main_window import Ui_MainWindow
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+
+        self.mods_dict = {
+            "HRTA": self.hrta_table_widget,
+            "RTA": self.rta_table_widget,
+            "RW": self.rw_table_widget,
+            "XRTA": self.xrta_table_widget,
+        }
+        for mod in self.mods_dict.values():
+            mod.setColumnCount(4)
+            mod.setHorizontalHeaderLabels(
+                ["Дата", "Герой", "VS", "Герой Противника"]
+            )
+
         self.gamedata = GameData("src\config\hrta.json")
         self.fill_combo_boxes()
-        self.hrta_table_widget.setColumnCount(4)
-        self.rta_table_widget.setColumnCount(4)
-        self.rw_table_widget.setColumnCount(4)
-        self.xrta_table_widget.setColumnCount(4)
-        self.hrta_table_widget.setHorizontalHeaderLabels(
-            ["Дата", "Герой", "VS", "Герой Противника"]
-        )
-        self.rta_table_widget.setHorizontalHeaderLabels(
-            ["Дата", "Герой", "VS", "Герой Противника"]
-        )
-        self.rw_table_widget.setHorizontalHeaderLabels(
-            ["Дата", "Герой", "VS", "Герой Противника"]
-        )
-        self.xrta_table_widget.setHorizontalHeaderLabels(
-            ["Дата", "Герой", "VS", "Герой Противника"]
-        )
         self.addRecordButton.clicked.connect(self.add_record)
+        self.winRadioButton.click()
 
     def fill_combo_boxes(self):
         for race in self.gamedata.races:
@@ -89,16 +87,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def get_current_table(self):
         current_tab_index = self.tabWidget.currentIndex()
         current_tab_name = self.tabWidget.tabText(current_tab_index)
-        if current_tab_name == "RTA":
-            return self.rta_table_widget
-        elif current_tab_name == "RW":
-            return self.rw_table_widget
-        elif current_tab_name == "HRTA":
-            return self.hrta_table_widget
-        elif current_tab_name == "XRTA":
-            return self.xrta_table_widget
-        else:
-            return None
+        return self.mods_dict.get(current_tab_name)
 
     def add_hero_row(self, table_widget, hero_image_1, hero_image_2, win_state):
         row_position = table_widget.rowCount()
