@@ -30,9 +30,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         }
         for mod in self.mods_dict.values():
             mod.setColumnCount(4)
-            mod.setHorizontalHeaderLabels(
-                ["Дата", "Герой", "VS", "Герой Противника"]
-            )
+            mod.setHorizontalHeaderLabels(["Дата", "Герой", "VS", "Герой Противника"])
 
         self.gamedata = GameData("src\config\hrta.json")
         self.fill_combo_boxes()
@@ -89,38 +87,63 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         current_tab_name = self.tabWidget.tabText(current_tab_index)
         return self.mods_dict.get(current_tab_name)
 
-    def add_hero_row(self, table_widget, hero_image_1, hero_image_2, win_state):
+    def add_hero_row(
+        self, table_widget, player_hero_image_path, enemy_player_image_path, win_state
+    ):
         row_position = table_widget.rowCount()
         table_widget.insertRow(row_position)
 
-        hero_pixmap_1 = QPixmap(hero_image_1).scaled(
+        player_hero_pixmap = QPixmap(player_hero_image_path).scaled(
             128, 128, Qt.KeepAspectRatio, Qt.SmoothTransformation
         )
-        hero_pixmap_2 = QPixmap(hero_image_2).scaled(
+        enemy_hero_pixmap = QPixmap(enemy_player_image_path).scaled(
             128, 128, Qt.KeepAspectRatio, Qt.SmoothTransformation
         )
 
-        row_height = max(hero_pixmap_1.height(), hero_pixmap_2.height())
-        table_widget.setRowHeight(row_position, row_height)
+        player_hero_widget = QWidget()
+        player_hero_layout = QVBoxLayout(player_hero_widget)
+        player_hero_image = QLabel()
+        player_hero_image.setPixmap(player_hero_pixmap)
+        player_name = QLabel("Игрок 1")
+        player_name.setAlignment(Qt.AlignCenter)
+        player_hero_layout.addWidget(player_hero_image)
+        player_hero_layout.addWidget(player_name)
+
+        enemy_hero_widget = QWidget()
+        enemy_hero_layout = QVBoxLayout(enemy_hero_widget)
+        enemy_hero_image = QLabel()
+        enemy_hero_image.setPixmap(enemy_hero_pixmap)
+        enemy_name = QLabel("Игрок 2")
+        enemy_name.setAlignment(Qt.AlignCenter)
+        enemy_hero_layout.addWidget(enemy_hero_image)
+        enemy_hero_layout.addWidget(enemy_name)
+
+        player_hero_widget.setLayout(player_hero_layout)
+        enemy_hero_widget.setLayout(enemy_hero_layout)
+
+        row_height = max(
+            player_hero_pixmap.height() + player_name.sizeHint().height(),
+            enemy_hero_pixmap.height() + enemy_name.sizeHint().height(),
+        )
         table_widget.setColumnWidth(1, row_height)
         table_widget.setColumnWidth(3, row_height)
 
-        date: str = datetime.datetime.now()
-        date_label = QLabel(
-            f"{date.strftime('%d')}.{date.strftime('%m')}.{date.strftime('%y')}"
-        )
+        table_widget.setCellWidget(row_position, 1, player_hero_widget)
+        table_widget.setCellWidget(row_position, 3, enemy_hero_widget)
+
+        date = datetime.datetime.now().strftime("%d.%m.%y")
+        date_label = QLabel(date)
         date_label.setAlignment(Qt.AlignCenter)
-
-        hero_label_1 = QLabel()
-        hero_label_1.setPixmap(hero_pixmap_1)
-
-        hero_label_2 = QLabel()
-        hero_label_2.setPixmap(hero_pixmap_2)
+        table_widget.setColumnWidth(0, date_label.sizeHint().width() * 1.2)
 
         vs_label = QLabel("VS")
         vs_label.setAlignment(Qt.AlignCenter)
+        table_widget.setColumnWidth(2, vs_label.sizeHint().width())
 
-        table_widget.setCellWidget(row_position, 0, date_label)
-        table_widget.setCellWidget(row_position, 1, hero_label_1)
+        table_widget.setItem(row_position, 0, QTableWidgetItem(date))
         table_widget.setCellWidget(row_position, 2, vs_label)
-        table_widget.setCellWidget(row_position, 3, hero_label_2)
+
+        table_widget.setRowHeight(
+            row_position,
+            player_hero_pixmap.height() + player_name.sizeHint().height(),
+        )

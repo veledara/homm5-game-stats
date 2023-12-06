@@ -36,7 +36,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>3</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideNone</enum>
@@ -117,20 +117,30 @@
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>850</x>
-      <y>70</y>
-      <width>231</width>
-      <height>152</height>
+      <x>870</x>
+      <y>190</y>
+      <width>361</width>
+      <height>195</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="addRecordGrid">
-     <item row="2" column="1">
-      <widget class="QComboBox" name="playerHeroComboBox"/>
-     </item>
-     <item row="4" column="1">
+    <layout class="QGridLayout" name="addRecordLayout">
+     <item row="3" column="2" colspan="2">
       <widget class="QComboBox" name="enemyHeroComboBox"/>
      </item>
-     <item row="5" column="0" alignment="Qt::AlignHCenter">
+     <item row="6" column="0" colspan="4">
+      <widget class="QPushButton" name="addRecordButton">
+       <property name="text">
+        <string>Добавить партию</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QComboBox" name="playerHeroComboBox"/>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QComboBox" name="enemyRaceComboBox"/>
+     </item>
+     <item row="4" column="0" colspan="2" alignment="Qt::AlignHCenter">
       <widget class="QRadioButton" name="winRadioButton">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -146,37 +156,67 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
-      <widget class="QComboBox" name="playerRaceComboBox"/>
+     <item row="0" column="0" colspan="4" alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="playerHeroLabel">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Выбери своего героя&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
      </item>
-     <item row="5" column="1" alignment="Qt::AlignHCenter">
+     <item row="4" column="2" colspan="2" alignment="Qt::AlignHCenter">
       <widget class="QRadioButton" name="loseRadioButton">
        <property name="text">
         <string>Поражение</string>
        </property>
       </widget>
      </item>
-     <item row="6" column="0" colspan="2">
-      <widget class="QPushButton" name="addRecordButton">
+     <item row="5" column="2" colspan="2">
+      <widget class="QLineEdit" name="enemyPlayerNameLineEdit">
        <property name="text">
-        <string>Добавить партию</string>
+        <string/>
        </property>
       </widget>
      </item>
-     <item row="4" column="0">
-      <widget class="QComboBox" name="enemyRaceComboBox"/>
-     </item>
-     <item row="3" column="0" colspan="2" alignment="Qt::AlignHCenter">
+     <item row="2" column="0" colspan="4" alignment="Qt::AlignHCenter">
       <widget class="QLabel" name="enemyHeroLabel">
        <property name="text">
-        <string>Выбери героя оппонента</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Выбери героя оппонента&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0" colspan="2" alignment="Qt::AlignHCenter">
-      <widget class="QLabel" name="playerHeroLabel">
+     <item row="1" column="0" colspan="2">
+      <widget class="QComboBox" name="playerRaceComboBox"/>
+     </item>
+     <item row="5" column="0" colspan="2" alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="enemyPlayerNameLabel">
        <property name="text">
-        <string>Выбери своего героя</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введите никнейм оппонента:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>70</y>
+      <width>361</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="playerNameLayout">
+     <item>
+      <widget class="QLabel" name="enterYourNameLabel">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Привет! Для начала, введи свой игровой ник.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Он будет отображаться в таблице игр.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="playerNameLineEdit">
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </item>
