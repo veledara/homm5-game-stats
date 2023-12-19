@@ -8,6 +8,7 @@ from PySide6.QtWidgets import (
     QLabel,
     QVBoxLayout,
     QWidget,
+    QTextEdit
 )
 from PySide6.QtGui import QPixmap
 from PySide6.QtCore import Qt
@@ -46,9 +47,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 ),
             }
             for mod in self.modes.values():
-                mod.tab_widget.setColumnCount(4)
+                mod.tab_widget.setColumnCount(6)
                 mod.tab_widget.setHorizontalHeaderLabels(
-                    ["Дата", "Вы", "VS", "Противник"]
+                    ["Дата", "Вы", "VS", "Противник", "", "Заметки"]
                 )
 
             self.enterYourNameWidget.hide()
@@ -101,7 +102,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def add_record(self):
         player_hero_name = self.playerHeroComboBox.currentText()
         enemy_hero_name = self.enemyHeroComboBox.currentText()
-        enemy_name = self.enemyPlayerNameLineEdit.text().strip()
+        enemy_name = (
+            self.enemyPlayerNameLineEdit.text().strip()
+            if self.enemyPlayerNameLineEdit.text().strip() != ""
+            else "Оппонент"
+        )
         win_state = self.winRadioButton.isChecked()
         date = datetime.datetime.now()
 
@@ -119,6 +124,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     date,
                     self.user.name,
                     enemy_name,
+                    notes="",
                 )
                 self.user.add_game(new_game)
                 self.add_game_on_table(new_game)
@@ -172,6 +178,21 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         vs_label = QLabel("VS")
         vs_label.setAlignment(Qt.AlignCenter)
+
+        win_indicator = QLabel()
+        win_indicator.setStyleSheet(
+            "QLabel { background-color: %s; }"
+            % ("#008000" if game.win_state else "#9b111e")
+        )
+        table_widget.setColumnWidth(4, vs_label.sizeHint().width())
+
+        notes_edit = QTextEdit()
+        notes_edit.setPlaceholderText("Заметки по игре...")
+
+        table_widget.setCellWidget(row_position, 5, notes_edit)
+
+        table_widget.setCellWidget(row_position, 4, win_indicator)
+
         table_widget.setColumnWidth(2, vs_label.sizeHint().width())
 
         table_widget.setCellWidget(row_position, 0, date_label)

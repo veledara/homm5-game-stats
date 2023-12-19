@@ -36,7 +36,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>3</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideNone</enum>
@@ -63,6 +63,9 @@
         <height>640</height>
        </rect>
       </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
      </widget>
     </widget>
     <widget class="QWidget" name="rw_tab">
@@ -78,6 +81,9 @@
         <height>640</height>
        </rect>
       </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
      </widget>
     </widget>
     <widget class="QWidget" name="hrta_tab">
@@ -96,6 +102,9 @@
         <height>640</height>
        </rect>
       </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
      </widget>
     </widget>
     <widget class="QWidget" name="xrta_tab">
@@ -111,6 +120,9 @@
         <height>640</height>
        </rect>
       </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
      </widget>
     </widget>
     <widget class="QWidget" name="frfb_tab">
@@ -126,6 +138,9 @@
         <height>640</height>
        </rect>
       </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
      </widget>
     </widget>
    </widget>
