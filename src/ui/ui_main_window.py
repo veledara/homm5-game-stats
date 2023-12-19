@@ -63,6 +63,12 @@ class Ui_MainWindow(object):
         self.xrta_table_widget.setObjectName(u"xrta_table_widget")
         self.xrta_table_widget.setGeometry(QRect(0, 0, 800, 640))
         self.tabWidget.addTab(self.xrta_tab, "")
+        self.frfb_tab = QWidget()
+        self.frfb_tab.setObjectName(u"frfb_tab")
+        self.frfb_table_widget = QTableWidget(self.frfb_tab)
+        self.frfb_table_widget.setObjectName(u"frfb_table_widget")
+        self.frfb_table_widget.setGeometry(QRect(0, 0, 800, 640))
+        self.tabWidget.addTab(self.frfb_tab, "")
         self.enterYourNameWidget = QWidget(self.centralwidget)
         self.enterYourNameWidget.setObjectName(u"enterYourNameWidget")
         self.enterYourNameWidget.setGeometry(QRect(860, 70, 380, 131))
@@ -153,7 +159,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(3)
+        self.tabWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -165,6 +171,7 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.rw_tab), QCoreApplication.translate("MainWindow", u"RW", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.hrta_tab), QCoreApplication.translate("MainWindow", u"HRTA", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.xrta_tab), QCoreApplication.translate("MainWindow", u"XRTA", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.frfb_tab), QCoreApplication.translate("MainWindow", u"FRFB", None))
         self.playerNameLineEdit.setText("")
         self.confirmNameButton.setText(QCoreApplication.translate("MainWindow", u"\u041f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u044c", None))
         self.enterYourNameLabel.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:12pt; font-weight:700;\">\u041f\u0440\u0438\u0432\u0435\u0442! \u0414\u043b\u044f \u043d\u0430\u0447\u0430\u043b\u0430, \u0432\u0432\u0435\u0434\u0438 \u0441\u0432\u043e\u0439 \u0438\u0433\u0440\u043e\u0432\u043e\u0439 \u043d\u0438\u043a.</span></p><p align=\"center\"><span style=\" font-size:12pt; font-weight:700;\">\u041e\u043d \u0431\u0443\u0434\u0435\u0442 \u043e\u0442\u043e\u0431\u0440\u0430\u0436\u0430\u0442\u044c\u0441\u044f \u0432 \u0442\u0430\u0431\u043b\u0438\u0446\u0435 \u0438\u0433\u0440.</span></p></body></html>", None))

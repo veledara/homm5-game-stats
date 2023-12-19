@@ -36,7 +36,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>4</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideNone</enum>
@@ -103,6 +103,21 @@
       <string>XRTA</string>
      </attribute>
      <widget class="QTableWidget" name="xrta_table_widget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>640</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="frfb_tab">
+     <attribute name="title">
+      <string>FRFB</string>
+     </attribute>
+     <widget class="QTableWidget" name="frfb_table_widget">
       <property name="geometry">
        <rect>
         <x>0</x>

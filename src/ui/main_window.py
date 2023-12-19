@@ -26,10 +26,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.addRecordWidget.hide()
         self.confirmNameButton.clicked.connect(self.enter_player_name)
 
-        self.addRecordButton.clicked.connect(self.add_record)
-        self.tabWidget.currentChanged.connect(self.fill_combo_boxes)
-        self.winRadioButton.click()
-
     def enter_player_name(self) -> None:
         player_nickname = self.playerNameLineEdit.text().strip()
         if player_nickname:
@@ -45,6 +41,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 "XRTA": Mode(
                     "XRTA", "src\\config\\xrta_config.json", self.xrta_table_widget
                 ),
+                "FRFB": Mode(
+                    "FRFB", "src\\config\\frfb_config.json", self.frfb_table_widget
+                ),
             }
             for mod in self.modes.values():
                 mod.tab_widget.setColumnCount(4)
@@ -54,6 +53,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             self.enterYourNameWidget.hide()
             self.addRecordWidget.show()
+            self.addRecordButton.clicked.connect(self.add_record)
+            self.tabWidget.currentChanged.connect(self.fill_combo_boxes)
+            self.winRadioButton.click()
             self.fill_combo_boxes()
         else:
             pass
